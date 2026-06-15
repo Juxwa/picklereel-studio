@@ -1,0 +1,72 @@
+/* src/styles/tokens.css */
+:root {
+  /* Colors */
+  --color-primary: #F97316;
+  --color-primary-dark: #FB923C;
+  --color-accent: #22C55E;
+  --color-background: #1F2937;
+  --color-surface: #37414F;
+  --color-foreground: #F8FAFC;
+  --color-muted: #9CA3AF;
+  --color-border: #374151;
+  --color-destructive: #EF4444;
+  --color-ring: #F97316;
+
+  /* Court colors */
+  --color-court-bg: #0F172A;
+  --color-court-line: #334155;
+  --color-court-nva: #1E3A5F;
+  --color-player: #F97316;
+  --color-ball: #F8FAFC;
+  --color-arrow: #F97316;
+
+  /* Spacing (8dp grid) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* Typography */
+  --font-heading: 'Barlow Condensed', sans-serif;
+  --font-body: 'Barlow', sans-serif;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  /* Motion */
+  --duration-fast: 150ms;
+  --duration-normal: 200ms;
+  --duration-step: 300ms;
+  --easing-enter: ease-out;
+  --easing-exit: ease-in;
+
+  /* Touch targets */
+  --touch-min: 48px;
+  --bottom-nav-height: 64px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
