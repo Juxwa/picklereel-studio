@@ -1,4 +1,4 @@
-package com.getcapacitor.myapp;
+package com.picklereel.studio;
 
 import com.getcapacitor.BridgeActivity;
 
