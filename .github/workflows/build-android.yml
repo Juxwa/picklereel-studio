@@ -44,12 +44,9 @@ jobs:
         run: |
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/picklereel-release.jks
 
-      - name: Make gradlew executable
-        run: chmod +x android/gradlew
-
       - name: Build release APK
         working-directory: android
-        run: ./gradlew assembleRelease
+        run: bash gradlew assembleRelease
         env:
           SIGNING_KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
           SIGNING_KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
